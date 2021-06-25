@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero 
+{
+    height :100 vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(light.jpeg);
+    background-size : cover;
+    background-position: center;
+    position: absolute;
+}
+
+.hero h1{
+    width: 100%;
+    color: burlywood;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 65px;
+    line-height: 85px;
+    position: absolute;
+    left: 50%;
+    top :50%;
+    transform: translate(-50%,-50%);
+    }
+
+    
+.neon{
+    width: 15px;
+    height: 700px;
+    background:transparent;
+     border-radius: 15px;
+    position: relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 40px 5px #fff,
+                inset 0 0 20px #fff,
+                0 0 160px 20px rgb(255,128,158),
+                inset 0 0 20px rgb(255,128,158),
+                0 0 320px 30px rgb(255,128,158),
+                inset 0 0 20px rgb(255,128,158);
+    animation: run 7s linear infinite;
+
+            
+                
+    
+}
+
+@keyframes run {
+    0%
+    {
+        left: 10%;
+        opacity: 0;
+    }
+
+    2%
+    {
+        left: 10%;
+        opacity: 1;
+    }
+
+    4%
+    {
+        left: 10%;
+        opacity: 0;
+    }
+
+    8%
+    {
+        left: 10%;
+        opacity: 0;
+    }
+
+    10% 
+    {
+        left: 10%;
+        opacity: 1;
+    }
+
+    100% 
+    {
+        left: 90%;
+        opacity: 1;
+    }
+}
